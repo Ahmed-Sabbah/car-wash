@@ -1,0 +1,102 @@
+.admin-panel-new-employee {
+    display: block;
+    padding: 40px 60px;
+}
+
+.admin-panel-new-employee .target-link {
+    display: flex;
+    align-items: center;
+    margin-bottom: 40px;
+}
+
+.admin-panel-new-employee .target-link a {
+    font-size: 14px;
+    font-weight: 400;
+    text-decoration: none;
+    color: #CDCDCD;
+}
+
+.admin-panel-new-employee .target-link a.active {
+    color: #45E01F;
+}
+
+.admin-panel-new-employee .target-link span {
+    color: #CDCDCD;
+    padding: 0 8px;
+}
+
+.admin-panel-new-employee .new-employee-box {
+    width: 872px;
+    height: 361px;
+    padding: 24px;
+    background-color: #303030;
+    border-radius: 4px;
+    -webkit-border-radius: 4px;
+    -moz-border-radius: 4px;
+    -ms-border-radius: 4px;
+    -o-border-radius: 4px;
+}
+
+.admin-panel-new-employee .new-employee-box h3 {
+    font-size: 25px;
+    font-weight: bold;
+    color: #FCFCFC;
+    margin-bottom: 32px;
+}
+
+.admin-panel-new-employee .new-employee-box form {
+    width: 100%;
+}
+
+.admin-panel-new-employee .new-employee-box form .form-group {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 44px;
+}
+
+.admin-panel-new-employee .new-employee-box form .form-group .input-group {
+    margin-bottom: 16px;
+}
+
+.admin-panel-new-employee .new-employee-box form .form-group .input-group label {
+    display: block;
+    font-size: 14px;
+    font-weight: 400;
+    color: #CDCDCD;
+    margin-bottom: 8px;
+}
+
+.admin-panel-new-employee .new-employee-box form .form-group .input-group input {
+    width: 400px;
+    height: 41px;
+    font-size: 14px;
+    font-weight: 400;
+    color: #CDCDCD;
+    background-color: #303030;
+    padding: 0 10px;
+    border: 1px solid #CDCDCD;
+    border-radius: 4px;
+    -webkit-border-radius: 4px;
+    -moz-border-radius: 4px;
+    -ms-border-radius: 4px;
+    -o-border-radius: 4px;
+}
+
+.admin-panel-new-employee .new-employee-box form button {
+    width: 141px;
+    height: 41px;
+    background-color: #247310;
+    font-size: 14px;
+    font-weight: bold;
+    color: #FFFFFF;
+    float: right;
+    cursor: pointer;
+    border: none;
+    border-radius: 4px;
+    -webkit-border-radius: 4px;
+    -moz-border-radius: 4px;
+    -ms-border-radius: 4px;
+    -o-border-radius: 4px;
+}

@@ -1,0 +1,219 @@
+.admin-panel-employee {
+    display: block;
+    padding: 40px 60px;
+}
+
+.admin-panel-employee .employee-table-tools {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    margin-bottom: 24px;
+}
+
+.admin-panel-employee .employee-table-tools button {
+    width: 167px;
+    height: 41px;
+    background-color: #247310;
+    cursor: pointer;
+    border: none;
+    border-radius: 4px;
+    -webkit-border-radius: 4px;
+    -moz-border-radius: 4px;
+    -ms-border-radius: 4px;
+    -o-border-radius: 4px;
+}
+
+.admin-panel-employee .employee-table-tools button a {
+    font-size: 14px;
+    font-weight: bold;
+    color: #FFFFFF;
+    text-decoration: none;
+}
+
+.admin-panel-employee .employee-table-data {
+    display: block;
+}
+
+.admin-panel-employee .employee-table-data {
+    width: 100%;
+}
+
+.admin-panel-employee .employee-table-data table {
+    width: 100%;
+    border-collapse: collapse;
+    text-align: left;
+}
+
+.admin-panel-employee .employee-table-data table thead {
+    width: 100%;
+    height: 40px;
+    background-color: #262626;
+}
+
+.admin-panel-employee .employee-table-data table thead tr {
+    height: 40px;
+}
+
+.admin-panel-employee .employee-table-data table thead th {
+    height: 40px;
+    font-size: 13px;
+    font-weight: bold;
+    color: #CDCDCD;
+    line-height: 15px;
+    text-transform: uppercase;
+    padding-left: 20px;
+}
+
+.admin-panel-employee .employee-table-data table thead th:first-child {
+    border-top-left-radius: 4px;
+}
+
+.admin-panel-employee .employee-table-data table thead th:last-child {
+    border-top-right-radius: 4px;
+}
+
+.admin-panel-employee .employee-table-data table thead th img {
+    width: 7.98px;
+    height: 14.36px;
+    margin-left: 10px;
+}
+
+.admin-panel-employee .employee-table-data table tbody {
+    width: 100%;
+    background-color: #303030;
+    /* border-bottom-left-radius: 4px;
+    border-bottom-right-radius: 4px; */
+}
+
+/* .admin-panel-employee .employee-table-data table tbody tr {
+    border-bottom: 1px solid #262626;
+} */
+
+.admin-panel-employee .employee-table-data table tbody tr:last-of-type {
+    border-bottom: none;
+}
+
+.admin-panel-employee .employee-table-data table tbody td {
+    height: 56px;
+    font-size: 14px;
+    font-weight: 400;
+    color: #FCFCFC;
+    line-height: 21px;
+    padding-left: 20px;
+}
+
+.admin-panel-employee .employee-table-data table tbody tr:last-of-type td:first-child {
+    border-bottom-left-radius: 4px;
+}
+
+.admin-panel-employee .employee-table-data table tbody tr:last-of-type td:last-child {
+    border-bottom-right-radius: 4px;
+}
+
+.admin-panel-employee .employee-table-data table tbody td.status span {
+    font-size: 13px;
+    font-weight: 400;
+    color: #FCFCFC;
+    padding: 2px 8px;
+    border-radius: 4px;
+    -webkit-border-radius: 4px;
+    -moz-border-radius: 4px;
+    -ms-border-radius: 4px;
+    -o-border-radius: 4px;
+}
+
+.admin-panel-employee .employee-table-data table tbody td.status span.active {
+    background-color: #28A745;
+}
+
+.admin-panel-employee .employee-table-data table tbody td.status span.inactive {
+    background-color: #F4442E;
+}
+
+.admin-panel-employee .employee-table-data table tbody td.status span.pending {
+    background-color: #FEC601;
+}
+
+.admin-panel-employee .employee-table-data table tbody td.action a {
+    font-size: 14px;
+    font-weight: 400;
+    text-decoration: none;
+}
+
+.admin-panel-employee .employee-table-data table tbody td.action a.activate {
+    color: #F4442E;
+}
+
+.admin-panel-employee .employee-table-data table tbody td.action a.deactivate {
+    color: #45E01F;
+}
+
+.admin-panel-employee .employee-table-data table tbody td.action a.no-action {
+    color: #FCFCFC;
+}
+
+.admin-panel-employee .employee-table-data .paginat {
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 18px 0;
+}
+
+.admin-panel-employee .employee-table-data .paginat p {
+    font-size: 14px;
+    font-weight: 400;
+    color: #ACACAC;
+}
+
+.admin-panel-employee .employee-table-data .paginat .links {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.admin-panel-employee .employee-table-data .paginat .links .left {
+    margin-right: 10px;
+}
+
+.admin-panel-employee .employee-table-data .paginat .links .right {
+    margin-left: 10px;
+}
+
+.admin-panel-employee .employee-table-data .paginat .links div {
+    height: 28px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0 5px;
+}
+
+.admin-panel-employee .employee-table-data .paginat .links div a {
+    text-decoration: none;
+    padding: 0 12px;
+    font-size: 14px;
+    font-weight: 400;
+    color: #CDCDCD;
+}
+
+.admin-panel-employee .employee-table-data .paginat .links div a.active {
+    width: 24px;
+    height: 24px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #45E01F;
+    background-color: #303030;
+    border-radius: 4px;
+    -webkit-border-radius: 4px;
+    -moz-border-radius: 4px;
+    -ms-border-radius: 4px;
+    -o-border-radius: 4px;
+}
+
+.admin-panel-employee .employee-table-data .paginat .links div span.more {
+    font-size: 14px;
+    font-weight: 400;
+    color: #CDCDCD;
+}

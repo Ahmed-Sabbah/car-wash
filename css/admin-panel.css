@@ -1,0 +1,122 @@
+.admin-panel {
+    display: block;
+    padding: 40px 60px;
+}
+
+.admin-panel .statistics {
+    width: 100%;
+    /* width: calc(648px * 2); */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 56px;
+}
+
+.admin-panel .statistics>div {
+    /* width: 312px; */
+    width: 24%;
+    height: 130px;
+    padding: 32px 24px;
+    /* margin-right: 24px; */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: #303030;
+    border-radius: 4px;
+    -webkit-border-radius: 4px;
+    -moz-border-radius: 4px;
+    -ms-border-radius: 4px;
+    -o-border-radius: 4px;
+}
+
+.admin-panel .statistics>div:last-of-type {
+    margin-right: 0;
+}
+
+.admin-panel .statistics>div p {
+    width: 119px;
+    font-size: 20px;
+    font-weight: 400;
+    color: #FCFCFC;
+}
+
+.admin-panel .statistics>div h2 {
+    font-size: 55px;
+    font-weight: bold;
+    color: #FCFCFC;
+}
+
+.admin-panel .accounts {
+    width: 100%;
+    /* width: calc(324px * 4); */
+    display: flex;
+    justify-content: space-between;
+}
+
+.admin-panel .accounts>div {
+    /* width: 648px; */
+    width: 49.3%;
+}
+
+/* .admin-panel .accounts .customers {
+    margin-right: 24px;
+} */
+
+.admin-panel .accounts>div .view-all {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 17px;
+}
+
+.admin-panel .accounts>div .view-all .title {
+    font-size: 16px;
+    font-weight: bold;
+    color: #FCFCFC;
+}
+
+.admin-panel .accounts>div .view-all a {
+    font-size: 14px;
+    font-weight: 400;
+    color: #45E01F;
+    text-decoration: none;
+}
+
+.admin-panel .accounts>div .items {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.admin-panel .accounts>div .items>div {
+    /* width: 306px; */
+    width: 49%;
+    height: 95px;
+    padding: 24px;
+    margin-bottom: 24px;
+    background-color: #303030;
+    border-radius: 4px;
+    -webkit-border-radius: 4px;
+    -moz-border-radius: 4px;
+    -ms-border-radius: 4px;
+    -o-border-radius: 4px;
+}
+
+/* .admin-panel .accounts>div .items>div:nth-child(1),
+.admin-panel .accounts>div .items>div:nth-child(3) {
+    margin-right: 24px;
+} */
+
+.admin-panel .accounts>div .items>div p {
+    font-size: 18px;
+    font-weight: 400;
+    color: #FCFCFC;
+    margin-bottom: 8px;
+}
+
+.admin-panel .accounts>div .items>div span {
+    font-size: 14px;
+    font-weight: 400;
+    color: #CDCDCD;
+}

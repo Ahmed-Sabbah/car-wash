@@ -1,0 +1,318 @@
+.authentication {
+    width: 100%;
+    display: flex;
+    margin-top: 20px;
+}
+
+.authentication .authentication-cover {
+    width: 708px;
+    height: 100%;
+}
+
+.authentication .authentication-cover img {
+    width: 100%;
+    height: 100%;
+    opacity: 0.7;
+    border-radius: 4px;
+    -webkit-border-radius: 4px;
+    -moz-border-radius: 4px;
+    -ms-border-radius: 4px;
+    -o-border-radius: 4px;
+}
+
+.authentication .sign-up-form,
+.authentication .sign-in-form,
+.authentication .verify-account-form,
+.authentication .reset-password-code-form,
+.authentication .new-password-form {
+    padding-left: 48px;
+}
+
+.authentication .title {
+    margin-top: 28px;
+    margin-bottom: 19px;
+    font-size: 30px;
+    font-weight: bold;
+    font-family: 'Bebas Neue', cursive;
+    text-transform: uppercase;
+    color: #FCFCFC;
+}
+
+.authentication .social-login {
+    display: flex;
+    align-items: center;
+    margin-bottom: 32px;
+}
+
+.authentication .social-login button {
+    width: 220px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    padding-left: 16px;
+    border: none;
+    border-radius: 4px;
+    -webkit-border-radius: 4px;
+    -moz-border-radius: 4px;
+    -ms-border-radius: 4px;
+    -o-border-radius: 4px;
+}
+
+.authentication .social-login button a {
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    font-size: 14px;
+    font-weight: bold;
+}
+
+.authentication .social-login button a img {
+    width: 24px;
+    height: 24px;
+    margin-right: 16.2px;
+}
+
+.authentication .social-login button:first-of-type {
+    background-color: #3B5998;
+    margin-right: 30px;
+}
+
+.authentication .social-login button:first-of-type a {
+    color: #FFF;
+}
+
+.authentication .social-login button:last-of-type {
+    background-color: #FCFCFC;
+}
+
+.authentication .social-login button:last-of-type a {
+    color: #040404;
+}
+
+.authentication .auth-type-separate {
+    text-align: center;
+    color: #FCFCFC;
+    font-size: 14px;
+    font-weight: bold;
+    margin-bottom: 24px;
+}
+
+.authentication .sign-up-form form,
+.authentication .sign-in-form form,
+.authentication .new-password-form form {
+    width: 100%;
+}
+
+.authentication form .input-group {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 16px;
+}
+
+.authentication form .input-group label {
+    font-size: 14px;
+    font-weight: 400;
+    color: #CDCDCD;
+    margin-bottom: 8px;
+}
+
+.authentication form .input-group input {
+    width: 470px;
+    height: 48px;
+    background-color: #1D1D1D;
+    border: 1px solid #CDCDCD;
+    border-radius: 4px;
+    -webkit-border-radius: 4px;
+    -moz-border-radius: 4px;
+    -ms-border-radius: 4px;
+    -o-border-radius: 4px;
+}
+
+.authentication form .input-group:last-of-type {
+    margin-bottom: 24px;
+}
+
+.authentication .new-password-form form .input-group:last-of-type {
+    margin-bottom: 48px;
+}
+
+.authentication .sign-up-form form .agree,
+.authentication .sign-up-form form .have-accout,
+.authentication .sign-in-form form .have-accout,
+.authentication .verify-account-form form .resend-code,
+.authentication .reset-password-code-form form .resend-code,
+.authentication .new-password-form form .resend-code {
+    color: #FCFCFC;
+    font-size: 14px;
+    font-weight: 400;
+    margin-bottom: 48px;
+}
+
+.authentication .sign-up-form form .agree a,
+.authentication .sign-up-form form .have-accout a,
+.authentication .sign-in-form form .have-accout a,
+.authentication .verify-account-form form .resend-code a,
+.authentication .reset-password-code-form form .resend-code a,
+.authentication .new-password-form form .resend-code a {
+    font-size: 14px;
+    font-weight: bold;
+    color: #45E01F;
+    text-decoration: none;
+}
+
+.authentication .sign-up-form form button,
+.authentication .sign-in-form form button,
+.authentication .verify-account-form form button,
+.authentication .reset-password-code-form form button,
+.authentication .new-password-form form button {
+    /* width: 94px; */
+    padding: 0 24px;
+    height: 41px;
+    font-size: 14px;
+    font-weight: bold;
+    color: #FFFFFF;
+    margin-bottom: 24px;
+    background-color: #247310;
+    border: none;
+    border-radius: 4px;
+    -webkit-border-radius: 4px;
+    -moz-border-radius: 4px;
+    -ms-border-radius: 4px;
+    -o-border-radius: 4px;
+}
+
+.authentication .sign-up-form form .have-accout,
+.authentication .sign-in-form form .have-accout,
+.authentication .new-password-form form .resend-code {
+    margin-bottom: 0;
+}
+
+.authentication .sign-in-form form .forgot-password {
+    text-align: right;
+    font-size: 14px;
+    font-weight: 400;
+    margin-bottom: 48px;
+}
+
+.authentication .sign-in-form form .forgot-password a {
+    text-decoration: none;
+    color: #CDCDCD;
+}
+
+.authentication .verify-account-form .verification-msg,
+.authentication .reset-password-code-form .verification-msg {
+    width: 500px;
+    font-size: 16px;
+    font-weight: 400;
+    color: #CDCDCD;
+    margin-bottom: 40px;
+}
+
+.authentication .verify-account-form form .code-inputs,
+.authentication .reset-password-code-form form .code-inputs {
+    display: flex;
+    margin-bottom: 64px;
+}
+
+.authentication .verify-account-form form .code-inputs input,
+.authentication .reset-password-code-form form .code-inputs input {
+    width: 50px;
+    height: 60px;
+    background-color: #1D1D1D;
+    margin-right: 24px;
+    font-size: 30px;
+    font-weight: bold;
+    text-align: center;
+    color: #FFFFFF;
+    border: 1px solid #CDCDCD;
+    border-radius: 4px;
+    -webkit-border-radius: 4px;
+    -moz-border-radius: 4px;
+    -ms-border-radius: 4px;
+    -o-border-radius: 4px;
+}
+
+.authentication .verify-account-form form .code-inputs input:last-of-type,
+.authentication .reset-password-code-form form .code-inputs input:last-of-type {
+    margin-right: 0;
+}
+
+@media screen and (max-width: 991px) {
+    .authentication {
+        width: 100%;
+        display: block;
+        margin-top: 0;
+    }
+
+    .authentication .authentication-cover {
+        display: none;
+    }
+
+    .authentication .sign-up-form,
+    .authentication .sign-in-form,
+    .authentication .verify-account-form,
+    .authentication .reset-password-code-form,
+    .authentication .new-password-form {
+        padding-left: 0;
+        width: 100%;
+        padding: 40px 24px;
+    }
+
+    .authentication .title {
+        font-weight: 500;
+    }
+
+    .authentication .social-login {
+        display: block;
+        margin-bottom: 32px;
+    }
+
+    .authentication .social-login button {
+        width: 100%;
+        height: 40px;
+        display: flex;
+        align-items: center;
+        border: none;
+        border-radius: 4px;
+        -webkit-border-radius: 4px;
+        -moz-border-radius: 4px;
+        -ms-border-radius: 4px;
+        -o-border-radius: 4px;
+    }
+
+    .authentication .social-login button:first-of-type {
+        margin-bottom: 16px;
+    }
+
+    .authentication form .input-group input {
+        width: 100%;
+    }
+
+    .authentication .sign-up-form form button,
+    .authentication .sign-in-form form button,
+    .authentication .verify-account-form form button,
+    .authentication .reset-password-code-form form button,
+    .authentication .new-password-form form button {
+        width: 100%;
+    }
+
+    .authentication .verify-account-form .verification-msg,
+    .authentication .reset-password-code-form .verification-msg {
+        width: 100%;
+    }
+
+    .authentication .verify-account-form form .code-inputs input,
+    .authentication .reset-password-code-form form .code-inputs input {
+        width: 39px;
+        height: 47px;
+        background-color: #1D1D1D;
+        margin-right: 19px;
+    }
+
+    
+    .authentication .new-password-form form .resend-code,
+    .authentication .verify-account-form form .resend-code,
+    .authentication .reset-password-code-form form .resend-code {
+        letter-spacing: 3px;
+    }
+}

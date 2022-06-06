@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Car Wash</title>
+    <link rel="stylesheet" href="css/admin-panel-new-employee.css">
+    <link rel="stylesheet" href="css/main.css">
+</head>
+
+<body>
+    <header>
+        <div class="left-navbar">
+            <img class="logo" src="images/landpage/Logo.svg" alt="logo">
+            <ul class="nav-links">
+                <li class="nav-item"><a href="#">Dashboard</a></li>
+                <!-- <li class="nav-item"><a href="#">Settings</a></li> -->
+                <li class="nav-item active"><a href="#">Employees</a></li>
+                <li class="nav-item"><a href="#">Customers</a></li>
+                <li class="nav-item"><a href="#">Assignments</a></li>
+            </ul>
+        </div>
+        <div class="right-navbar">
+            <div class="auth-user">
+                <div class="notification-icon" id="showNotification">
+                    <img src="images/icons/bell.svg" alt="bell">
+                </div>
+                <h4>Hello John</h4>
+                <div class="user-image">
+                    <!-- <img src="" alt=""> -->
+                </div>
+            </div>
+            <!-- <button class="login-link"><a href="#">Login</a></button>
+            <button class="get-started-link"><a href="#">Get Started</a></button> -->
+            <button class="choose-localization"><img src="images/icons/british flag.svg" alt="lang"></button>
+        </div>
+    </header>
+
+    <div class="admin-panel-new-employee">
+        <div class="target-link">
+            <a href="#" class="active">Employee</a>
+            <span>|</span>
+            <a href="#">Add new employee</a>
+        </div>
+        <div class="new-employee-box">
+            <h3>Employee Details</h3>
+            <form>
+                <div class="form-group">
+                    <div class="input-group">
+                        <label>Name</label>
+                        <input type="text">
+                    </div>
+                    <div class="input-group">
+                        <label>Email address</label>
+                        <input type="text">
+                    </div>
+                    <div class="input-group">
+                        <label>Password</label>
+                        <input type="text">
+                    </div>
+                    <div class="input-group">
+                        <label>Mobile Number</label>
+                        <input type="text">
+                    </div>
+                </div>
+                <button>Save employee</button>
+            </form>
+        </div>
+    </div>
+
+    <script src="js/jquery-3.5.1.min.js"></script>
+</body>
+
+</html>

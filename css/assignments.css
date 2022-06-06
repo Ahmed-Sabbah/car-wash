@@ -1,0 +1,355 @@
+.assignments {
+    width: 100%;
+    display: flex;
+    padding: 40px 60px 24px 60px;
+}
+
+.assignments .car-wash {
+    width: calc(100% - 424px);
+    margin-right: 24px;
+}
+
+.assignments .car-wash .head {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 24px;
+}
+
+.assignments .car-wash .head .filter {
+    display: flex;
+    align-items: center;
+}
+
+.assignments .car-wash .head .filter .input-group {
+    width: 200px;
+    margin-right: 24px;
+}
+
+/* .assignments .car-wash .head .filter .input-group select, */
+.assignments .car-wash .head .filter .input-group input {
+    width: 100%;
+    height: 48px;
+    background-color: #1D1D1D;
+    padding: 0 10px;
+    font-size: 13px;
+    font-weight: 400;
+    color: #CDCDCD;
+    outline: none;
+    border: 1px solid #CDCDCD;
+    border-radius: 4px;
+    -webkit-border-radius: 4px;
+    -moz-border-radius: 4px;
+    -ms-border-radius: 4px;
+    -o-border-radius: 4px;
+}
+
+/* .assignments .car-wash .head .filter .input-group select option {
+    padding: 10px;
+    line-height: 2px;
+} */
+
+
+/* The container must be positioned relative: */
+.custom-select {
+    width: 200px;
+    position: relative;
+    top: 4px;
+    margin-right: 24px;
+}
+
+.custom-select select {
+    display: none;
+    /*hide original SELECT element: */
+}
+
+.select-selected {
+    height: 48px;
+    background-color: #1D1D1D;
+    display: flex;
+    align-items: center;
+    margin-bottom: 8px;
+    font-size: 13px;
+    font-weight: 400;
+    color: #CDCDCD;
+    border: 1px solid #CDCDCD !important;
+    border-radius: 4px;
+    -webkit-border-radius: 4px;
+    -moz-border-radius: 4px;
+    -ms-border-radius: 4px;
+    -o-border-radius: 4px;
+}
+
+/* Style the arrow inside the select element: */
+.select-selected:after {
+    position: absolute;
+    content: "";
+    top: 20px;
+    right: 10px;
+    width: 0;
+    height: 0;
+    border: 6px solid transparent;
+    border-color: #fff transparent transparent transparent;
+}
+
+/* Point the arrow upwards when the select box is open (active): */
+.select-selected.select-arrow-active:after {
+    border-color: transparent transparent #fff transparent;
+    top: 15px;
+}
+
+/* style the items (options), including the selected item: */
+.select-items div,
+.select-selected {
+    color: #ffffff;
+    padding: 8px 16px;
+    border: 1px solid transparent;
+    border-color: transparent transparent rgba(0, 0, 0, 0.1) transparent;
+    cursor: pointer;
+}
+
+.select-items div {
+    border: none;
+    font-size: 16px;
+    font-weight: 400;
+    /* color: #CDCDCD; */
+}
+
+/* Style items (options): */
+.select-items {
+    position: absolute;
+    background-color: #303030;
+    top: 100%;
+    left: 0;
+    right: 0;
+    z-index: 99;
+    border: 1px solid #CDCDCD !important;
+    border-radius: 4px;
+    -webkit-border-radius: 4px;
+    -moz-border-radius: 4px;
+    -ms-border-radius: 4px;
+    -o-border-radius: 4px;
+}
+
+/* Hide the items when the select box is closed: */
+.select-hide {
+    display: none;
+}
+
+.select-items div:hover,
+.same-as-selected {
+    background-color: rgba(0, 0, 0, 0.1);
+}
+
+
+.assignments .car-wash .head button {
+    width: 171px;
+    height: 41px;
+    background-color: #247310;
+    font-size: 14px;
+    font-weight: bold;
+    color: #FFFFFF;
+    cursor: pointer;
+    border: none;
+    border-radius: 4px;
+    -webkit-border-radius: 4px;
+    -moz-border-radius: 4px;
+    -ms-border-radius: 4px;
+    -o-border-radius: 4px;
+}
+
+input[type="date"]::-webkit-calendar-picker-indicator {
+    background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="16" height="15" viewBox="0 0 24 24"><path fill="%2345E01F" d="M20 3h-1V1h-2v2H7V1H5v2H4c-1.1 0-2 .9-2 2v16c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2zm0 18H4V8h16v13z"/></svg>');
+}
+
+.assignments .car-wash .cars {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.assignments .car-wash .cars .item {
+    width: 200px;
+    height: 104px;
+    padding: 16px;
+    background-color: #303030;
+    margin-bottom: 24px;
+    margin-right: 24px;
+    border-radius: 4px;
+    -webkit-border-radius: 4px;
+    -moz-border-radius: 4px;
+    -ms-border-radius: 4px;
+    -o-border-radius: 4px;
+}
+
+.assignments .car-wash .cars .item h4 {
+    font-size: 18px;
+    font-weight: 400;
+    color: #FCFCFC;
+    margin-bottom: 8px;
+}
+
+.assignments .car-wash .cars .item p {
+    font-size: 14px;
+    font-weight: 400;
+    color: #CDCDCD;
+    margin-bottom: 16px;
+}
+
+.assignments .car-wash .cars .item .date {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.assignments .car-wash .cars .item .date span {
+    font-size: 14px;
+    font-weight: 400;
+    color: #CDCDCD;
+}
+
+.assignments .car-wash .cars .item .date svg {
+    width: 16.5px;
+    height: 15.7px;
+}
+
+.assignments .car-wash .cars .item .date svg path {
+    fill: #45E01F;
+}
+
+.assignments .drag-drop-box {
+    width: 450px;
+    height: 642px;
+    padding: 16px 8px;
+    background-color: #303030;
+    border-radius: 4px;
+    -webkit-border-radius: 4px;
+    -moz-border-radius: 4px;
+    -ms-border-radius: 4px;
+    -o-border-radius: 4px;
+}
+
+.assignments .drag-drop-box .head {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 32px;
+}
+
+.assignments .drag-drop-box .head h3 {
+    font-size: 20px;
+    font-weight: bold;
+    color: #FCFCFC;
+    margin: 0 24px;
+}
+
+.assignments .drag-drop-box .head button {
+    outline: none;
+    border: none;
+    background-color: transparent;
+}
+
+.assignments .drag-drop-box .cards {
+    width: 100%;
+    height: calc(100% - 56px);
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    align-content: flex-start;
+    overflow-y: auto;
+}
+
+.assignments .drag-drop-box .cards::-webkit-scrollbar {
+    width: 0;
+    display: none;
+}
+
+.assignments .drag-drop-box .cards .empty-state {
+    font-size: 16px;
+    font-weight: 400;
+    color: #CDCDCD;
+    margin-top: 72px;
+    padding: 0 46px;
+    text-align: center;
+}
+
+.assignments .drag-drop-box .cards .item {
+    width: 200px;
+    height: 104px;
+    padding: 16px;
+    background-color: #262626;
+    margin-bottom: 24px;
+    margin-right: 8px;
+    border-radius: 4px;
+    -webkit-border-radius: 4px;
+    -moz-border-radius: 4px;
+    -ms-border-radius: 4px;
+    -o-border-radius: 4px;
+}
+
+.assignments .drag-drop-box .cards .item .tool {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 8px;
+}
+
+.assignments .drag-drop-box .cards .item .tool h4 {
+    font-size: 18px;
+    font-weight: 400;
+    color: #FCFCFC;
+}
+
+/* 
+.assignments .drag-drop-box .cards .item .tool h4.focus {
+    color: #45E01F;
+} */
+
+.assignments .drag-drop-box .cards .item .tool button {
+    width: 24px;
+    height: 24px;
+    background-color: #303030;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    outline: none;
+    border: none;
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+}
+
+.assignments .drag-drop-box .cards .item p {
+    font-size: 14px;
+    font-weight: 400;
+    color: #CDCDCD;
+    margin-bottom: 16px;
+}
+
+.assignments .drag-drop-box .cards .item .date {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.assignments .drag-drop-box .cards .item .date span {
+    font-size: 14px;
+    font-weight: 400;
+    color: #CDCDCD;
+}
+
+.assignments .drag-drop-box .cards .item .date svg {
+    width: 16.5px;
+    height: 15.7px;
+}
+
+.assignments .drag-drop-box .cards .item .date svg path {
+    fill: #45E01F;
+}

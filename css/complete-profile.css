@@ -1,0 +1,675 @@
+.complete-profile,
+.car-details {
+    display: block;
+    margin-top: 40px;
+    margin-bottom: 47px;
+    padding: 0 60px;
+}
+
+.complete-profile .step,
+.car-details .step {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 72px;
+}
+
+.complete-profile .step .title h2,
+.car-details .step .title h2 {
+    font-size: 30px;
+    font-weight: bold;
+    font-family: 'Bebas Neue', cursive;
+    text-transform: uppercase;
+    color: #FCFCFC;
+    margin-bottom: 11px;
+}
+
+.complete-profile .step .title h2 span,
+.car-details .step .title h2 span {
+    font-size: 30px;
+    font-weight: bold;
+    font-family: 'Bebas Neue', cursive;
+    color: #45E01F;
+}
+
+.complete-profile .step .title p,
+.car-details .step .title p {
+    font-size: 16px;
+    font-weight: 400;
+    color: #CDCDCD;
+}
+
+.complete-profile .step button,
+.car-details .step button {
+    height: 41px;
+    padding: 0 24px;
+    background-color: #247310;
+    font-size: 14px;
+    font-weight: bold;
+    color: #FFFFFF;
+    border: none;
+    border-radius: 4px;
+    -webkit-border-radius: 4px;
+    -moz-border-radius: 4px;
+    -ms-border-radius: 4px;
+    -o-border-radius: 4px;
+}
+
+.complete-profile .step button a,
+.car-details .step button a {
+    text-decoration: none;
+    font-size: 14px;
+    font-weight: bold;
+    color: #FFFFFF;
+}
+
+.complete-profile .profile-details {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.complete-profile .profile-details .details {
+    width: 63%;
+    /* margin-right: 24px; */
+}
+
+.complete-profile .profile-details .details>div {
+    /* width: 872px; */
+    width: 100%;
+    background-color: #303030;
+    padding: 24px;
+    border-radius: 4px;
+    -webkit-border-radius: 4px;
+    -moz-border-radius: 4px;
+    -ms-border-radius: 4px;
+    -o-border-radius: 4px;
+}
+
+.complete-profile .profile-details .user-details {
+    margin-bottom: 30px;
+}
+
+.complete-profile .profile-details .user-details h3,
+.complete-profile .profile-details .parking-details h3,
+.complete-profile .profile-details .profile-image h3 {
+    font-size: 20px;
+    font-weight: bold;
+    color: #FCFCFC;
+    margin-bottom: 32px;
+}
+
+.complete-profile .profile-details .user-details .form-group {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.complete-profile .profile-details .user-details .form-group .input-group {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 16px;
+}
+
+.complete-profile .profile-details .user-details .form-group .input-group label,
+.complete-profile .profile-details .parking-details .form-group .input-group:first-of-type label {
+    font-size: 14px;
+    font-weight: 400;
+    color: #CDCDCD;
+    margin-bottom: 8px;
+}
+
+.complete-profile .profile-details .user-details .form-group .input-group input,
+.complete-profile .profile-details .parking-details .form-group .input-group:first-of-type input {
+    width: 400px;
+    height: 48px;
+    background-color: #303030;
+    border: 1px solid #CDCDCD;
+    border-radius: 4px;
+    -webkit-border-radius: 4px;
+    -moz-border-radius: 4px;
+    -ms-border-radius: 4px;
+    -o-border-radius: 4px;
+}
+
+.complete-profile .profile-details .user-details .form-group .input-group:nth-child(3),
+.complete-profile .profile-details .user-details .form-group .input-group:last-of-type {
+    margin-bottom: 0;
+}
+
+.complete-profile .profile-details .parking-details .form-group {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.complete-profile .profile-details .parking-details .form-group .input-group {
+    display: flex;
+    flex-direction: column;
+}
+
+.complete-profile .profile-details .parking-details .form-group .input-group:first-of-type {
+    margin-right: 24px;
+}
+
+.complete-profile .profile-details .parking-details .form-group .input-group .leaving-time {
+    display: flex;
+}
+
+.complete-profile .profile-details .parking-details .form-group .input-group .leaving-time p {
+    font-size: 14px;
+    font-weight: 400;
+    color: #CDCDCD;
+    margin-bottom: 8px;
+    margin-right: 30px;
+}
+
+.complete-profile .profile-details .parking-details .form-group .input-group .leaving-time span {
+    font-size: 14px;
+    font-weight: 400;
+    color: #45E01F;
+    display: none;
+    cursor: pointer;
+}
+
+.complete-profile .profile-details .parking-details .form-group .input-group .leaving {
+    display: flex;
+    margin-top: 12px;
+}
+
+.complete-profile .profile-details .parking-details .form-group .input-group .leaving label:first-of-type {
+    margin-right: 109px;
+}
+
+.complete-profile .profile-details .parking-details .form-group .input-group .show-leaving-time {
+    display: none;
+}
+
+.complete-profile .profile-details .parking-details .form-group .input-group .show-leaving-time input {
+    width: 400px;
+    height: 48px;
+    background-color: #303030;
+    padding: 0 8px;
+    color: #FCFCFC;
+    border: 1px solid #CDCDCD;
+    border-radius: 4px;
+    -webkit-border-radius: 4px;
+    -moz-border-radius: 4px;
+    -ms-border-radius: 4px;
+    -o-border-radius: 4px;
+}
+
+.complete-profile .profile-details .parking-details .form-group .input-group .leaving .container {
+    display: flex;
+    align-items: center;
+    position: relative;
+    padding-left: 30px;
+    margin-bottom: 12px;
+    cursor: pointer;
+    font-size: 14px;
+    font-weight: bold;
+    color: #FCFCFC;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+/* Hide the browser's default radio button */
+.complete-profile .profile-details .parking-details .form-group .input-group .leaving .container input {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+}
+
+/* Create a custom radio button */
+.complete-profile .profile-details .parking-details .form-group .input-group .leaving .checkmark {
+    position: absolute;
+    top: -2px;
+    left: 0;
+    height: 20px;
+    width: 20px;
+    background-color: none;
+    border: 1px solid #CDCDCD;
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+}
+
+/* On mouse-over, add a grey background color */
+.complete-profile .profile-details .parking-details .form-group .input-group .leaving .container:hover input~.checkmark {
+    border: 2px solid #45E01F;
+}
+
+/* When the radio button is checked, add a blue background */
+.complete-profile .profile-details .parking-details .form-group .input-group .leaving .container input:checked~.checkmark {
+    border: 2px solid #45E01F;
+}
+
+/* Create the indicator (the dot/circle - hidden when not checked) */
+.complete-profile .profile-details .parking-details .form-group .input-group .leaving .checkmark:after {
+    content: "";
+    position: absolute;
+    display: none;
+}
+
+/* Show the indicator (dot/circle) when checked */
+.complete-profile .profile-details .parking-details .form-group .input-group .leaving .container input:checked~.checkmark:after {
+    display: block;
+}
+
+/* Style the indicator (dot/circle) */
+.complete-profile .profile-details .parking-details .form-group .input-group .leaving .container .checkmark:after {
+    top: 3px;
+    left: 3px;
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background: #45E01F;
+}
+
+.complete-profile .profile-details .profile-image {
+    /* width: 424px; */
+    width: 35%;
+    height: 354px;
+    padding: 24px;
+    background-color: #303030;
+    border-radius: 4px;
+    -webkit-border-radius: 4px;
+    -moz-border-radius: 4px;
+    -ms-border-radius: 4px;
+    -o-border-radius: 4px;
+}
+
+.complete-profile .profile-details .profile-image .upload-image {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 40px;
+}
+
+.complete-profile .profile-details .profile-image .upload-image .image {
+    width: 114px;
+    height: 114px;
+    margin-bottom: 16px;
+    background-color: #FFFFFF;
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+}
+
+.complete-profile .profile-details .profile-image .upload-image .image img {
+    width: 114px;
+    height: 114px;
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+}
+
+.complete-profile .profile-details .profile-image .upload-image p {
+    font-size: 14px;
+    font-weight: 400;
+    color: #CDCDCD;
+}
+
+.car-details {
+    display: block;
+}
+
+.car-details p.choose-msg {
+    font-size: 20px;
+    font-weight: bold;
+    color: #FCFCFC;
+    margin-bottom: 16px;
+}
+
+.car-details .car-type {
+    width: 100%;
+    background-color: #303030;
+    padding: 24px;
+    border-radius: 4px;
+    -webkit-border-radius: 4px;
+    -moz-border-radius: 4px;
+    -ms-border-radius: 4px;
+    -o-border-radius: 4px;
+}
+
+.car-details .car-type .select-car {
+    width: 100%;
+    margin-bottom: 48px;
+    display: grid;
+    grid-template-columns: repeat(4, auto);
+    column-gap: 24px;
+}
+
+.car-details .car-type .select-car>div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.car-details .car-type .select-car>div img,
+.car-details .car-type .select-car>div svg {
+    margin-bottom: 24px;
+}
+
+.car-details .car-type .select-car>div.selected svg path,
+.car-details .car-type .select-car>div.selected p {
+    cursor: pointer;
+    color: #8FEC79;
+    fill: #8FEC79;
+}
+
+.car-details .car-type .select-car>div p {
+    font-size: 16px;
+    font-weight: 400;
+    color: #CDCDCD;
+}
+
+.car-details .car-type .form-group {
+    display: flex;
+    justify-content: space-between;
+}
+
+.car-details .car-type .form-group .input-group {
+    width: 32%;
+    display: flex;
+    flex-direction: column;
+}
+
+.car-details .car-type .form-group .input-group label {
+    font-size: 14px;
+    font-weight: 400;
+    color: #CDCDCD;
+    margin-bottom: 8px;
+}
+
+/* .car-details .car-type .form-group .input-group select, */
+.car-details .car-type .form-group .input-group input {
+    width: 100%;
+    height: 48px;
+    background-color: #303030;
+    padding: 0 10px;
+    font-size: 13px;
+    font-weight: 400;
+    color: #CDCDCD;
+    outline: none;
+    border: 1px solid #CDCDCD;
+    border-radius: 4px;
+    -webkit-border-radius: 4px;
+    -moz-border-radius: 4px;
+    -ms-border-radius: 4px;
+    -o-border-radius: 4px;
+}
+
+/* .car-details .car-type .form-group .input-group select option {
+    padding: 10px;
+} */
+
+
+/* The container must be positioned relative: */
+.custom-select {
+    width: 100%;
+    position: relative;
+    /* top: 4px; */
+    margin-right: 24px;
+}
+
+.custom-select select {
+    display: none;
+    /*hide original SELECT element: */
+}
+
+.select-selected {
+    height: 48px;
+    background-color: #303030;
+    display: flex;
+    align-items: center;
+    margin-bottom: 8px;
+    font-size: 13px;
+    font-weight: 400;
+    color: #CDCDCD;
+    border: 1px solid #CDCDCD !important;
+    border-radius: 4px;
+    -webkit-border-radius: 4px;
+    -moz-border-radius: 4px;
+    -ms-border-radius: 4px;
+    -o-border-radius: 4px;
+}
+
+/* Style the arrow inside the select element: */
+.select-selected:after {
+    position: absolute;
+    content: "";
+    top: 20px;
+    right: 10px;
+    width: 0;
+    height: 0;
+    border: 6px solid transparent;
+    border-color: #fff transparent transparent transparent;
+}
+
+/* Point the arrow upwards when the select box is open (active): */
+.select-selected.select-arrow-active:after {
+    border-color: transparent transparent #fff transparent;
+    top: 15px;
+}
+
+/* style the items (options), including the selected item: */
+.select-items div,
+.select-selected {
+    color: #ffffff;
+    padding: 8px 16px;
+    border: 1px solid transparent;
+    border-color: transparent transparent rgba(0, 0, 0, 0.1) transparent;
+    cursor: pointer;
+}
+
+.select-items div {
+    border: none;
+    font-size: 16px;
+    font-weight: 400;
+    /* color: #CDCDCD; */
+}
+
+/* Style items (options): */
+.select-items {
+    position: absolute;
+    background-color: #303030;
+    top: 100%;
+    left: 0;
+    right: 0;
+    z-index: 99;
+    border: 1px solid #CDCDCD !important;
+    border-radius: 4px;
+    -webkit-border-radius: 4px;
+    -moz-border-radius: 4px;
+    -ms-border-radius: 4px;
+    -o-border-radius: 4px;
+}
+
+/* Hide the items when the select box is closed: */
+.select-hide {
+    display: none;
+}
+
+.select-items div:hover,
+.same-as-selected {
+    background-color: rgba(0, 0, 0, 0.1);
+}
+
+
+@media screen and (max-width: 991px) {
+
+    .complete-profile,
+    .car-details {
+        padding: 0 24px;
+    }
+
+    .complete-profile .step .title h2,
+    .car-details .step .title h2 {
+        font-weight: 500;
+    }
+
+    .complete-profile .step,
+    .car-details .step {
+        display: flex;
+        justify-content: space-between;
+        margin-bottom: 50px;
+    }
+
+    .complete-profile .step .btn-group,
+    .car-details .step .btn-group {
+        width: 100%;
+        height: 81px;
+        position: fixed;
+        bottom: 0;
+        left: 0;
+        z-index: 99;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: #1D1D1D;
+        padding: 0 24px;
+    }
+
+    .complete-profile .step .btn-group button,
+    .car-details .step .btn-group button {
+        width: 100%;
+        height: 41px;
+    }
+
+    .complete-profile .profile-details {
+        display: block;
+        width: 100%;
+    }
+
+    .complete-profile .profile-details .details {
+        margin-right: 0;
+        margin-bottom: 16px;
+    }
+
+    .complete-profile .profile-details .user-details {
+        margin-bottom: 16px;
+    }
+
+    .complete-profile .profile-details .details>div {
+        width: 100%;
+        background-color: #303030;
+        padding: 24px;
+    }
+
+    .complete-profile .profile-details .user-details .form-group {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+    }
+
+    .complete-profile .profile-details .user-details .form-group .input-group input,
+    .complete-profile .profile-details .parking-details .form-group .input-group:first-of-type input {
+        width: 100%;
+    }
+
+    .complete-profile .profile-details .user-details .form-group .input-group {
+        margin-bottom: 16px;
+    }
+
+    .complete-profile .profile-details .user-details .form-group .input-group:nth-child(3) {
+        margin-bottom: 16px;
+    }
+
+    .complete-profile .profile-details .parking-details .form-group {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+    }
+
+    .complete-profile .profile-details .parking-details .form-group .input-group:first-of-type {
+        margin-bottom: 32px;
+    }
+
+    .complete-profile .profile-details .parking-details .form-group .input-group {
+        width: 100%;
+    }
+
+    .complete-profile .profile-details .parking-details .form-group .input-group .show-leaving-time {
+        width: 100%;
+    }
+
+    .complete-profile .profile-details .parking-details .form-group .input-group .show-leaving-time input {
+        width: 100%;
+    }
+
+    .complete-profile .profile-details .profile-image {
+        width: 100%;
+        height: 251px;
+        padding: 16px;
+        margin-bottom: 81px;
+        background-color: #303030;
+        border-radius: 4px;
+        -webkit-border-radius: 4px;
+        -moz-border-radius: 4px;
+        -ms-border-radius: 4px;
+        -o-border-radius: 4px;
+    }
+
+    .complete-profile .profile-details .profile-image .upload-image {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-top: 0;
+    }
+
+    .complete-profile .profile-details .profile-image .upload-image .image {
+        width: 114px;
+        height: 114px;
+        margin-bottom: 16px;
+        background-color: #FFFFFF;
+    }
+
+    .complete-profile .profile-details .profile-image .upload-image .image img {
+        width: 114px;
+        height: 114px;
+    }
+
+    .car-details {
+        margin-bottom: 56px;
+    }
+
+    .car-details .car-type .select-car {
+        width: 100%;
+        margin-bottom: 51px;
+        display: block;
+    }
+
+    .car-details .car-type .select-car>div {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-bottom: 16px;
+    }
+
+    .car-details .car-type .form-group {
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+    }
+
+    .car-details .car-type .form-group .input-group {
+        width: 100%;
+        margin-bottom: 16px;
+    }
+
+    .car-details .car-type .select-car>div p {
+        margin-bottom: 14px;
+    }
+}

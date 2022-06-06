@@ -1,0 +1,358 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Car Wash</title>
+    <link rel="stylesheet" href="css/assignments.css">
+    <link rel="stylesheet" href="css/main.css">
+</head>
+
+<body>
+    <header>
+        <div class="left-navbar">
+            <img class="logo" src="images/landpage/Logo.svg" alt="logo">
+            <ul class="nav-links">
+                <li class="nav-item"><a href="#">Dashboard</a></li>
+                <!-- <li class="nav-item"><a href="#">Settings</a></li> -->
+                <li class="nav-item"><a href="#">Employees</a></li>
+                <li class="nav-item"><a href="#">Customers</a></li>
+                <li class="nav-item active"><a href="#">Assignments</a></li>
+            </ul>
+        </div>
+        <div class="right-navbar">
+            <div class="auth-user">
+                <div class="notification-icon" id="showNotification">
+                    <img src="images/icons/bell.svg" alt="bell">
+                </div>
+                <h4>Hello John</h4>
+                <div class="user-image">
+                    <!-- <img src="" alt=""> -->
+                </div>
+            </div>
+            <!-- <button class="login-link"><a href="#">Login</a></button>
+            <button class="get-started-link"><a href="#">Get Started</a></button> -->
+            <button class="choose-localization"><img src="images/icons/british flag.svg" alt="lang"></button>
+        </div>
+    </header>
+
+    <div class="assignments">
+        <div class="car-wash">
+            <div class="head">
+                <div class="filter">
+                    <div class="input-group">
+                        <input type="date">
+                    </div>
+                    <div class="custom-select">
+                        <select>
+                            <option disabled selected value="">Compound name</option>
+                            <option value="Compound 1">Compound 1</option>
+                            <option value="Compound 2">Compound 2</option>
+                            <option value="Compound 3">Compound 3</option>
+                            <option value="Compound 4">Compound 4</option>
+                        </select>
+                    </div>
+                    <div class="custom-select">
+                        <select>
+                            <option disabled selected>Parking slot</option>
+                            <option value="P-12">P-12</option>
+                            <option value="W-10">W-10</option>
+                            <option value="W-3">W-3</option>
+                            <option value="P-4">P-4</option>
+                        </select>
+                    </div>
+                    <!-- <div class="input-group">
+                        <select name="" id="">
+                            <option disabled selected>Compound name</option>
+                            <option value="">Compound 1</option>
+                            <option value="">Compound 2</option>
+                            <option value="">Compound 3</option>
+                            <option value="">Compound 4</option>
+                        </select>
+                    </div>
+                    <div class="input-group">
+                        <select name="" id="">
+                            <option disabled selected>Parking slot</option>
+                            <option value="">P-12</option>
+                            <option value="">W-10</option>
+                            <option value="">W-3</option>
+                            <option value="">P-4</option>
+                        </select>
+                    </div> -->
+                </div>
+                <button>Save Changes</button>
+            </div>
+            <div class="cars">
+                <div class="item" id="drag1" draggable="true" ondragstart="dragstart_handler(event)">
+                    <div class="tool">
+                        <h4>John Doe</h4>
+                    </div>
+                    <p>Compound 1 | P-10</p>
+                    <div class="date">
+                        <span>13/21/2021</span>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="33.628" height="32.117"
+                            viewBox="0 0 33.628 32.117">
+                            <path id="star"
+                                d="M32.627,12.058a1.416,1.416,0,0,1-.51.941L25,19.941l1.687,9.8a2.914,2.914,0,0,1,.02.392,1.156,1.156,0,0,1-.206.7.693.693,0,0,1-.6.285,1.583,1.583,0,0,1-.784-.236l-8.8-4.628-8.8,4.628a1.664,1.664,0,0,1-.784.236.712.712,0,0,1-.617-.285,1.161,1.161,0,0,1-.207-.7,3.205,3.205,0,0,1,.039-.392l1.687-9.8L.49,13A1.494,1.494,0,0,1,0,12.058q0-.725,1.1-.9l9.843-1.431L15.353.8q.372-.8.961-.8t.961.8l4.412,8.922,9.843,1.431q1.1.177,1.1.9Z"
+                                transform="translate(0.5 0.5)" fill="none" stroke="#45e01f" stroke-width="1" />
+                        </svg>
+                    </div>
+                </div>
+                <div class="item" id="drag2" draggable="true" ondragstart="dragstart_handler(event)">
+                    <div class="tool">
+                        <h4>John Doe</h4>
+                    </div>
+                    <p>Compound 1 | P-10</p>
+                    <div class="date">
+                        <span>13/21/2021</span>
+                    </div>
+                </div>
+                <div class="item" id="drag3" draggable="true" ondragstart="dragstart_handler(event)">
+                    <div class="tool">
+                        <h4>John Doe</h4>
+                    </div>
+                    <p>Compound 1 | P-10</p>
+                    <div class="date">
+                        <span>13/21/2021</span>
+                    </div>
+                </div>
+                <div class="item" id="drag4" draggable="true" ondragstart="dragstart_handler(event)">
+                    <div class="tool">
+                        <h4>John Doe</h4>
+                    </div>
+                    <p>Compound 1 | P-10</p>
+                    <div class="date">
+                        <span>13/21/2021</span>
+                    </div>
+                </div>
+                <div class="item" id="drag5" draggable="true" ondragstart="dragstart_handler(event)">
+                    <div class="tool">
+                        <h4>John Doe</h4>
+                    </div>
+                    <p>Compound 1 | P-10</p>
+                    <div class="date">
+                        <span>13/21/2021</span>
+                    </div>
+                </div>
+                <div class="item" id="drag6" draggable="true" ondragstart="dragstart_handler(event)">
+                    <div class="tool">
+                        <h4>John Doe</h4>
+                    </div>
+                    <p>Compound 1 | P-10</p>
+                    <div class="date">
+                        <span>13/21/2021</span>
+                    </div>
+                </div>
+                <div class="item" id="drag7" draggable="true" ondragstart="dragstart_handler(event)">
+                    <div class="tool">
+                        <h4>John Doe</h4>
+                    </div>
+                    <p>Compound 1 | P-10</p>
+                    <div class="date">
+                        <span>13/21/2021</span>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="33.628" height="32.117"
+                            viewBox="0 0 33.628 32.117">
+                            <path id="star"
+                                d="M32.627,12.058a1.416,1.416,0,0,1-.51.941L25,19.941l1.687,9.8a2.914,2.914,0,0,1,.02.392,1.156,1.156,0,0,1-.206.7.693.693,0,0,1-.6.285,1.583,1.583,0,0,1-.784-.236l-8.8-4.628-8.8,4.628a1.664,1.664,0,0,1-.784.236.712.712,0,0,1-.617-.285,1.161,1.161,0,0,1-.207-.7,3.205,3.205,0,0,1,.039-.392l1.687-9.8L.49,13A1.494,1.494,0,0,1,0,12.058q0-.725,1.1-.9l9.843-1.431L15.353.8q.372-.8.961-.8t.961.8l4.412,8.922,9.843,1.431q1.1.177,1.1.9Z"
+                                transform="translate(0.5 0.5)" fill="none" stroke="#45e01f" stroke-width="1" />
+                        </svg>
+                    </div>
+                </div>
+                <div class="item" id="drag8" draggable="true" ondragstart="dragstart_handler(event)">
+                    <div class="tool">
+                        <h4>John Doe</h4>
+                    </div>
+                    <p>Compound 1 | P-10</p>
+                    <div class="date">
+                        <span>13/21/2021</span>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="33.628" height="32.117"
+                            viewBox="0 0 33.628 32.117">
+                            <path id="star"
+                                d="M32.627,12.058a1.416,1.416,0,0,1-.51.941L25,19.941l1.687,9.8a2.914,2.914,0,0,1,.02.392,1.156,1.156,0,0,1-.206.7.693.693,0,0,1-.6.285,1.583,1.583,0,0,1-.784-.236l-8.8-4.628-8.8,4.628a1.664,1.664,0,0,1-.784.236.712.712,0,0,1-.617-.285,1.161,1.161,0,0,1-.207-.7,3.205,3.205,0,0,1,.039-.392l1.687-9.8L.49,13A1.494,1.494,0,0,1,0,12.058q0-.725,1.1-.9l9.843-1.431L15.353.8q.372-.8.961-.8t.961.8l4.412,8.922,9.843,1.431q1.1.177,1.1.9Z"
+                                transform="translate(0.5 0.5)" fill="none" stroke="#45e01f" stroke-width="1" />
+                        </svg>
+                    </div>
+                </div>
+                <div class="item" id="drag9" draggable="true" ondragstart="dragstart_handler(event)">
+                    <div class="tool">
+                        <h4>John Doe</h4>
+                    </div>
+                    <p>Compound 1 | P-10</p>
+                    <div class="date">
+                        <span>13/21/2021</span>
+                    </div>
+                </div>
+                <div class="item" id="drag10" draggable="true" ondragstart="dragstart_handler(event)">
+                    <div class="tool">
+                        <h4>John Doe</h4>
+                    </div>
+                    <p>Compound 1 | P-10</p>
+                    <div class="date">
+                        <span>13/21/2021</span>
+                    </div>
+                </div>
+                <div class="item" id="drag11" draggable="true" ondragstart="dragstart_handler(event)">
+                    <div class="tool">
+                        <h4>John Doe</h4>
+                    </div>
+                    <p>Compound 1 | P-10</p>
+                    <div class="date">
+                        <span>13/21/2021</span>
+                    </div>
+                </div>
+                <div class="item" id="drag12" draggable="true" ondragstart="dragstart_handler(event)">
+                    <div class="tool">
+                        <h4>John Doe</h4>
+                    </div>
+                    <p>Compound 1 | P-10</p>
+                    <div class="date">
+                        <span>13/21/2021</span>
+                    </div>
+                </div>
+                <div class="item" id="drag13" draggable="true" ondragstart="dragstart_handler(event)">
+                    <div class="tool">
+                        <h4>John Doe</h4>
+                    </div>
+                    <p>Compound 1 | P-10</p>
+                    <div class="date">
+                        <span>13/21/2021</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="drag-drop-box">
+            <div class="head">
+                <button><img src="images/icons/left-arrow.svg" alt="arrow-left"></button>
+                <h3>Employee Name</h3>
+                <button><img src="images/icons/right-arrow.svg" alt="chevron-right"></button>
+            </div>
+            <div class="cards" ondrop="drop_handler(event)" ondragover="allowDrop(event)">
+                <p class="empty-state">Drag and drop here the car washes to fill the employee schedule</p>
+            </div>
+        </div>
+    </div>
+
+    <script src="js/jquery-3.5.1.min.js"></script>
+
+    <script>
+        function dragstart_handler(ev) {
+            ev.dataTransfer.setData("text/plain", ev.target.id);
+        }
+        function allowDrop(ev) {
+            ev.preventDefault();
+        }
+        function drop_handler(ev) {
+
+            ev.preventDefault();
+
+            const data = ev.dataTransfer.getData("text/plain");
+
+            ev.target.querySelector('.empty-state').style.display = "none";
+
+            const dragElement = $('#' + data).html();
+
+            const newElement = document.createElement('div');
+            newElement.classList.add('item');
+            $(newElement).append(dragElement);
+
+            const newElementCloseBtn = '<button><img src="images/icons/close.svg" alt="close"></button>';
+
+            $(newElement.querySelector('.tool h4')).after(newElementCloseBtn);
+
+            $(newElement.querySelector('.tool button')).on('click', function (ev) {
+                $($(ev.target).closest('.item')[0]).remove();
+                const item = $('.drag-drop-box .cards').find('.item');
+                if (item.length <= 0) {
+                    $('.drag-drop-box .cards .empty-state').css('display', 'block');
+                }
+            })
+
+            ev.target.appendChild(newElement);
+        }
+
+        var x, i, j, l, ll, selElmnt, a, b, c;
+        /* Look for any elements with the class "custom-select": */
+        x = document.getElementsByClassName("custom-select");
+        l = x.length;
+        for (i = 0; i < l; i++) {
+            selElmnt = x[i].getElementsByTagName("select")[0];
+            ll = selElmnt.length;
+            /* For each element, create a new DIV that will act as the selected item: */
+            a = document.createElement("DIV");
+            a.setAttribute("class", "select-selected");
+            a.innerHTML = selElmnt.options[selElmnt.selectedIndex].innerHTML;
+            x[i].appendChild(a);
+            /* For each element, create a new DIV that will contain the option list: */
+            b = document.createElement("DIV");
+            b.setAttribute("class", "select-items select-hide");
+            for (j = 1; j < ll; j++) {
+                /* For each option in the original select element,
+                create a new DIV that will act as an option item: */
+                c = document.createElement("DIV");
+                c.innerHTML = selElmnt.options[j].innerHTML;
+                c.addEventListener("click", function (e) {
+                    /* When an item is clicked, update the original select box,
+                    and the selected item: */
+                    var y, i, k, s, h, sl, yl;
+                    s = this.parentNode.parentNode.getElementsByTagName("select")[0];
+                    sl = s.length;
+                    h = this.parentNode.previousSibling;
+                    for (i = 0; i < sl; i++) {
+                        if (s.options[i].innerHTML == this.innerHTML) {
+                            s.selectedIndex = i;
+                            h.innerHTML = this.innerHTML;
+                            y = this.parentNode.getElementsByClassName("same-as-selected");
+                            yl = y.length;
+                            for (k = 0; k < yl; k++) {
+                                y[k].removeAttribute("class");
+                            }
+                            this.setAttribute("class", "same-as-selected");
+                            break;
+                        }
+                    }
+                    h.click();
+                });
+                b.appendChild(c);
+            }
+            x[i].appendChild(b);
+            a.addEventListener("click", function (e) {
+                /* When the select box is clicked, close any other select boxes,
+                and open/close the current select box: */
+                e.stopPropagation();
+                closeAllSelect(this);
+                this.nextSibling.classList.toggle("select-hide");
+                this.classList.toggle("select-arrow-active");
+            });
+        }
+
+        function closeAllSelect(elmnt) {
+            /* A function that will close all select boxes in the document,
+            except the current select box: */
+            var x, y, i, xl, yl, arrNo = [];
+            x = document.getElementsByClassName("select-items");
+            y = document.getElementsByClassName("select-selected");
+            xl = x.length;
+            yl = y.length;
+            for (i = 0; i < yl; i++) {
+                if (elmnt == y[i]) {
+                    arrNo.push(i)
+                } else {
+                    y[i].classList.remove("select-arrow-active");
+                }
+            }
+            for (i = 0; i < xl; i++) {
+                if (arrNo.indexOf(i)) {
+                    x[i].classList.add("select-hide");
+                }
+            }
+        }
+
+        /* If the user clicks anywhere outside the select box,
+        then close all select boxes: */
+        document.addEventListener("click", closeAllSelect);
+    </script>
+</body>
+
+</html>

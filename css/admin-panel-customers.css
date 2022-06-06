@@ -1,0 +1,465 @@
+.admin-panel-customers {
+    display: block;
+    padding: 40px 60px;
+}
+
+.admin-panel-customers .customer-table-tools {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 24px;
+}
+
+.admin-panel-customers .customer-table-tools .filter {
+    display: flex;
+    align-items: center;
+}
+
+.admin-panel-customers .customer-table-tools .filter a {
+    width: 111px;
+    padding-bottom: 8px;
+    font-size: 14px;
+    font-weight: 400;
+    color: #FCFCFC;
+    text-transform: uppercase;
+    text-decoration: none;
+    text-align: center;
+}
+
+.admin-panel-customers .customer-table-tools .filter a.active {
+    color: #45E01F;
+    border-bottom: 1px solid #45E01F;
+}
+
+.admin-panel-customers .customer-table-tools .filter a:hover {
+    color: #45E01F;
+    border-bottom: 1px solid #45E01F;
+}
+
+.admin-panel-customers .customer-table-tools .filter .input-group {
+    width: 200px;
+    margin-right: 24px;
+}
+
+/* .admin-panel-customers .customer-table-tools .filter .input-group select {
+    width: 100%;
+    height: 48px;
+    background-color: #303030;
+    padding: 0 10px;
+    font-size: 13px;
+    font-weight: 400;
+    color: #CDCDCD;
+    outline: none;
+    border: 1px solid #CDCDCD;
+    border-radius: 4px;
+    -webkit-border-radius: 4px;
+    -moz-border-radius: 4px;
+    -ms-border-radius: 4px;
+    -o-border-radius: 4px;
+}
+
+.admin-panel-customers .customer-table-tools .filter .input-group select option {
+    padding: 10px;
+    line-height: 2px;
+} */
+
+/* The container must be positioned relative: */
+.custom-select {
+    width: 200px;
+    position: relative;
+    margin-right: 24px;
+}
+
+.custom-select select {
+    display: none;
+    /*hide original SELECT element: */
+}
+
+.select-selected {
+    height: 48px;
+    background-color: #1D1D1D;
+    display: flex;
+    align-items: center;
+    margin-bottom: 8px;
+    font-size: 13px;
+    font-weight: 400;
+    color: #CDCDCD;
+    border: 1px solid #CDCDCD !important;
+    border-radius: 4px;
+    -webkit-border-radius: 4px;
+    -moz-border-radius: 4px;
+    -ms-border-radius: 4px;
+    -o-border-radius: 4px;
+}
+
+/* Style the arrow inside the select element: */
+.select-selected:after {
+    position: absolute;
+    content: "";
+    top: 20px;
+    right: 10px;
+    width: 0;
+    height: 0;
+    border: 6px solid transparent;
+    border-color: #fff transparent transparent transparent;
+}
+
+/* Point the arrow upwards when the select box is open (active): */
+.select-selected.select-arrow-active:after {
+    border-color: transparent transparent #fff transparent;
+    top: 15px;
+}
+
+/* style the items (options), including the selected item: */
+.select-items div,
+.select-selected {
+    color: #ffffff;
+    padding: 8px 16px;
+    border: 1px solid transparent;
+    border-color: transparent transparent rgba(0, 0, 0, 0.1) transparent;
+    cursor: pointer;
+}
+
+.select-items div {
+    border: none;
+    font-size: 16px;
+    font-weight: 400;
+    /* color: #CDCDCD; */
+}
+
+/* Style items (options): */
+.select-items {
+    position: absolute;
+    background-color: #303030;
+    top: 100%;
+    left: 0;
+    right: 0;
+    z-index: 99;
+    border: 1px solid #CDCDCD !important;
+    border-radius: 4px;
+    -webkit-border-radius: 4px;
+    -moz-border-radius: 4px;
+    -ms-border-radius: 4px;
+    -o-border-radius: 4px;
+}
+
+/* Hide the items when the select box is closed: */
+.select-hide {
+    display: none;
+}
+
+.select-items div:hover,
+.same-as-selected {
+    background-color: rgba(0, 0, 0, 0.1);
+}
+
+.admin-panel-customers .customer-table-tools button {
+    width: 171px;
+    height: 41px;
+    background-color: #247310;
+    font-size: 14px;
+    font-weight: bold;
+    color: #FFFFFF;
+    cursor: pointer;
+    border: none;
+    border-radius: 4px;
+    -webkit-border-radius: 4px;
+    -moz-border-radius: 4px;
+    -ms-border-radius: 4px;
+    -o-border-radius: 4px;
+}
+
+.admin-panel-customers .customer-table-data {
+    display: block;
+}
+
+.admin-panel-customers .customer-table-data {
+    width: 100%;
+}
+
+.admin-panel-customers .customer-table-data table {
+    width: 100%;
+    border-collapse: collapse;
+    text-align: left;
+}
+
+.admin-panel-customers .customer-table-data table thead {
+    width: 100%;
+    height: 40px;
+    background-color: #262626;
+}
+
+.admin-panel-customers .customer-table-data table thead tr {
+    height: 40px;
+}
+
+.admin-panel-customers .customer-table-data table thead th {
+    height: 40px;
+    font-size: 13px;
+    font-weight: bold;
+    color: #CDCDCD;
+    line-height: 15px;
+    text-transform: uppercase;
+    padding-left: 20px;
+}
+
+.admin-panel-customers .customer-table-data table thead th:first-child {
+    border-top-left-radius: 4px;
+}
+
+.admin-panel-customers .customer-table-data table thead th:last-child {
+    border-top-right-radius: 4px;
+}
+
+.admin-panel-customers .customer-table-data table thead th img {
+    width: 7.98px;
+    height: 14.36px;
+    margin-left: 10px;
+}
+
+.admin-panel-customers .customer-table-data table tbody {
+    width: 100%;
+    background-color: #303030;
+    /* border-bottom-left-radius: 4px;
+    border-bottom-right-radius: 4px; */
+}
+
+/* .admin-panel-customers .customer-table-data table tbody tr {
+    border-bottom: 1px solid #262626;
+} */
+
+.admin-panel-customers .customer-table-data table tbody tr:last-of-type {
+    border-bottom: none;
+}
+
+.admin-panel-customers .customer-table-data table tbody td {
+    height: 56px;
+    font-size: 14px;
+    font-weight: 400;
+    color: #FCFCFC;
+    line-height: 21px;
+    padding-left: 20px;
+}
+
+.admin-panel-customers .customer-table-data table tbody tr:last-of-type td:first-child {
+    border-bottom-left-radius: 4px;
+}
+
+.admin-panel-customers .customer-table-data table tbody tr:last-of-type td:last-child {
+    border-bottom-right-radius: 4px;
+}
+
+.admin-panel-customers .customer-table-data table tbody td.status span {
+    font-size: 13px;
+    font-weight: 400;
+    color: #FCFCFC;
+    text-transform: capitalize;
+    padding: 2px 8px;
+    border-radius: 4px;
+    -webkit-border-radius: 4px;
+    -moz-border-radius: 4px;
+    -ms-border-radius: 4px;
+    -o-border-radius: 4px;
+}
+
+.admin-panel-customers .customer-table-data table tbody td.status span.active {
+    background-color: #28A745;
+}
+
+.admin-panel-customers .customer-table-data table tbody td.status span.inactive {
+    background-color: #F4442E;
+}
+
+.admin-panel-customers .customer-table-data table tbody td.status span.pending {
+    background-color: #FEC601;
+    cursor: pointer;
+}
+
+.admin-panel-customers .customer-table-data .paginat {
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 18px 0;
+}
+
+.admin-panel-customers .customer-table-data .paginat p {
+    font-size: 14px;
+    font-weight: 400;
+    color: #ACACAC;
+}
+
+.admin-panel-customers .customer-table-data .paginat .links {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.admin-panel-customers .customer-table-data .paginat .links .left {
+    margin-right: 10px;
+}
+
+.admin-panel-customers .customer-table-data .paginat .links .right {
+    margin-left: 10px;
+}
+
+.admin-panel-customers .customer-table-data .paginat .links div {
+    height: 28px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0 5px;
+}
+
+.admin-panel-customers .customer-table-data .paginat .links div a {
+    text-decoration: none;
+    padding: 0 12px;
+    font-size: 14px;
+    font-weight: 400;
+    color: #CDCDCD;
+}
+
+.admin-panel-customers .customer-table-data .paginat .links div a.active {
+    width: 24px;
+    height: 24px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #45E01F;
+    background-color: #303030;
+    border-radius: 4px;
+    -webkit-border-radius: 4px;
+    -moz-border-radius: 4px;
+    -ms-border-radius: 4px;
+    -o-border-radius: 4px;
+}
+
+.admin-panel-customers .customer-table-data .paginat .links div span.more {
+    font-size: 14px;
+    font-weight: 400;
+    color: #CDCDCD;
+}
+
+.admin-panel-customers .new-schedule-container {
+    width: 100%;
+    height: 100vh;
+    /* background-color: rgba(48, 48, 48, 0.88); */
+    backdrop-filter: blur(8px);
+    position: fixed;
+    top: 0;
+    /* right: 0; */
+    left: 100vw;
+    z-index: 999;
+    display: none;
+}
+
+.admin-panel-customers .new-schedule {
+    width: 372px;
+    height: 100%;
+    background-color: #303030;
+    padding: 37px 16px;
+    float: right;
+    overflow-y: auto;
+}
+
+.admin-panel-customers .new-schedule::-webkit-scrollbar {
+    width: 0;
+    border: 0;
+    display: none;
+}
+
+.admin-panel-customers .new-schedule .header {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 58px;
+}
+
+.admin-panel-customers .new-schedule .header h2 {
+    font-size: 30px;
+    font-weight: bold;
+    font-family: 'Bebas Neue', cursive;
+    color: #FCFCFC;
+    text-transform: uppercase;
+}
+
+.admin-panel-customers .new-schedule .header button {
+    width: 40px;
+    height: 40px;
+    background: #262626;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: none;
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+}
+
+.admin-panel-customers .new-schedule .customer-info {
+    width: 100%;
+    padding: 20px 24px;
+    background-color: #3B3B3B;
+    display: flex;
+    align-items: center;
+    margin-bottom: 40px;
+    border-radius: 4px;
+    -webkit-border-radius: 4px;
+    -moz-border-radius: 4px;
+    -ms-border-radius: 4px;
+    -o-border-radius: 4px;
+}
+
+.admin-panel-customers .new-schedule .customer-info .customer-name {
+    margin-right: 79px;
+}
+
+.admin-panel-customers .new-schedule .customer-info>div p {
+    font-size: 14px;
+    font-weight: 400;
+    color: #CDCDCD;
+    margin-bottom: 8px;
+}
+
+.admin-panel-customers .new-schedule .customer-info>div h3 {
+    font-size: 18px;
+    font-weight: bold;
+    color: #FCFCFC;
+}
+
+.admin-panel-customers .new-schedule .input-group {
+    width: 100%;
+}
+
+.admin-panel-customers .new-schedule .input-group label {
+    display: block;
+    font-size: 14px;
+    font-weight: 400;
+    color: #CDCDCD;
+    margin-bottom: 8px;
+}
+
+.admin-panel-customers .new-schedule .input-group input {
+    width: 100%;
+    height: 48px;
+    background-color: #303030;
+    border: 1px solid #CDCDCD;
+    padding: 0 16px;
+    color: #CDCDCD;
+    border-radius: 4px;
+    -webkit-border-radius: 4px;
+    -moz-border-radius: 4px;
+    -ms-border-radius: 4px;
+    -o-border-radius: 4px;
+}
+
+.admin-panel-customers .new-schedule .input-group input::-webkit-calendar-picker-indicator {
+    width: 15px;
+    height: 17px;
+    background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="16" height="15" viewBox="0 0 24 24"><path fill="%2345E01F" d="M20 3h-1V1h-2v2H7V1H5v2H4c-1.1 0-2 .9-2 2v16c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2zm0 18H4V8h16v13z"/></svg>');
+}

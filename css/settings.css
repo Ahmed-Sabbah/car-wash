@@ -1,0 +1,492 @@
+.settings {
+    width: 100%;
+    padding: 40px 60px;
+}
+
+.settings>div {
+    margin-bottom: 40px;
+}
+
+.settings .title {
+    font-size: 20px;
+    font-weight: bold;
+    color: #FCFCFC;
+    margin-bottom: 16px;
+}
+
+.settings .plan {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.settings .plan>div {
+    height: 176px;
+    background-color: #303030;
+    padding: 24px;
+    border-radius: 4px;
+    -webkit-border-radius: 4px;
+    -moz-border-radius: 4px;
+    -ms-border-radius: 4px;
+    -o-border-radius: 4px;
+}
+
+.settings .plan .current-plan {
+    width: 68%;
+}
+
+.settings .plan .more-washes {
+    width: 30%;
+}
+
+.settings .plan>div h3 {
+    font-size: 25px;
+    font-weight: 400;
+    color: #FCFCFC;
+    text-align: left;
+}
+
+.settings .current-plan .price {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 40px;
+}
+
+.settings .current-plan .price div {
+    display: flex;
+    align-items: center;
+}
+
+.settings .current-plan .price h2 {
+    font-size: 36px;
+    font-weight: bold;
+    color: #FCFCFC;
+    margin-right: 25px;
+}
+
+.settings .current-plan .price h2 sub {
+    font-size: 20px;
+    font-weight: bold;
+    color: #CDCDCD;
+    margin-left: 10px;
+}
+
+.settings .current-plan .price p {
+    font-size: 14px;
+    font-weight: bold;
+    color: #FCFCFC;
+}
+
+.settings .current-plan .price p span {
+    color: #909090;
+    font-weight: 400;
+}
+
+.settings .current-plan .total-wash {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 32px 0;
+}
+
+.settings .current-plan .total-wash div:first-of-type {
+    width: 476px;
+}
+
+.settings .current-plan .total-wash div:first-of-type p {
+    font-size: 14px;
+    font-weight: 400;
+    color: #CDCDCD;
+    margin-bottom: 8px;
+}
+
+.settings .current-plan .total-wash div #cancelSubscription {
+    width: 171px;
+    height: 41px;
+    background-color: #303030;
+    font-size: 14px;
+    font-weight: bold;
+    color: #FFFFFF;
+    border: 1px solid #FCFCFC;
+    border-radius: 4px;
+    -webkit-border-radius: 4px;
+    -moz-border-radius: 4px;
+    -ms-border-radius: 4px;
+    -o-border-radius: 4px;
+}
+
+.settings .current-plan .total-wash .range {
+    width: 100%;
+    height: 8px;
+    background-color: #404040;
+    position: relative;
+}
+
+.settings .current-plan .total-wash .range span {
+    height: 100%;
+    background-color: #45E01F;
+    position: absolute;
+}
+
+.settings .more-washes button {
+    width: 182px;
+    height: 41px;
+    margin-top: 48px;
+    float: right;
+    background-color: #303030;
+    font-size: 14px;
+    font-weight: bold;
+    color: #FFFFFF;
+    border: 1px solid #FCFCFC;
+    border-radius: 4px;
+    -webkit-border-radius: 4px;
+    -moz-border-radius: 4px;
+    -ms-border-radius: 4px;
+    -o-border-radius: 4px;
+}
+
+.settings .auto-renew {
+    width: 100%;
+}
+
+.settings .auto-renew .flex-row {
+    display: flex;
+    align-items: center;
+}
+
+.settings .auto-renew .flex-row .title {
+    margin-right: 215px;
+}
+
+/* Custom Checkbox Switch */
+
+.settings .auto-renew .flex-row .switch {
+    position: relative;
+    bottom: 7px;
+    display: inline-block;
+    width: 39px;
+    height: 24px;
+}
+
+.settings .auto-renew .flex-row .switch input {
+    opacity: 0;
+    width: 0;
+    height: 0;
+}
+
+.settings .auto-renew .flex-row .slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #45E01F;
+    transition: .4s;
+    -webkit-transition: .4s;
+    -moz-transition: .4s;
+    -ms-transition: .4s;
+    -o-transition: .4s;
+}
+
+.settings .auto-renew .flex-row .slider:before {
+    position: absolute;
+    content: "";
+    width: 18px;
+    height: 18px;
+    left: 4px;
+    bottom: 3px;
+    background-color: white;
+    transition: .4s;
+    -webkit-transition: .4s;
+    -moz-transition: .4s;
+    -ms-transition: .4s;
+    -o-transition: .4s;
+}
+
+.settings .auto-renew .flex-row input:checked+.slider {
+    background-color: #45E01F;
+}
+
+.settings .auto-renew .flex-row input:focus+.slider {
+    box-shadow: 0 0 1px #45E01F;
+}
+
+.settings .auto-renew .flex-row input:checked+.slider:before {
+    transform: translateX(13px);
+    -webkit-transform: translateX(13px);
+    -ms-transform: translateX(13px);
+    -moz-transform: translateX(13px);
+    -o-transform: translateX(13px);
+}
+
+/* Rounded sliders */
+.settings .auto-renew .flex-row .slider.round {
+    border-radius: 34px;
+}
+
+.settings .auto-renew .flex-row .slider.round:before {
+    border-radius: 50%;
+}
+
+/* End Custom Checkbox Switch */
+
+.settings .auto-renew p.auto-renew-msg {
+    width: 100%;
+    font-size: 14px;
+    font-weight: 400;
+    color: #CDCDCD;
+}
+
+.settings .payment-method {
+    width: 720px;
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: 40px;
+}
+
+.settings .payment-method p.title {
+    width: 100%;
+}
+
+.settings .payment-method>div {
+    width: 312px;
+    height: 140px;
+    padding: 24px;
+    margin-right: 20px;
+    cursor: pointer;
+    background-color: #303030;
+    border-radius: 4px;
+    -webkit-border-radius: 4px;
+    -moz-border-radius: 4px;
+    -ms-border-radius: 4px;
+    -o-border-radius: 4px;
+}
+
+/* .settings .payment-method .card.selected {
+    border: 1px solid #978DAD;
+} */
+
+.settings .payment-method .card>div {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.settings .payment-method .card .card-name p {
+    font-size: 16px;
+    font-weight: 400;
+    color: #FCFCFC;
+}
+
+.settings .payment-method .card .card-name span {
+    font-size: 14px;
+    font-weight: 400;
+    color: #CDCDCD;
+}
+
+.settings .payment-method .card .card-number {
+    margin-top: 49px;
+}
+
+.settings .payment-method .card .card-number .img img {
+    margin-right: 9px;
+}
+
+.settings .payment-method .card .card-number .img p {
+    display: inline-block;
+    font-size: 14px;
+    font-weight: 400;
+    color: #CDCDCD;
+    position: relative;
+    bottom: 5px;
+}
+
+.settings .payment-method .card .card-number .img p span {
+    position: relative;
+    top: 3px;
+}
+
+.settings .payment-method .add-card {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.settings .payment-history {
+    width: 710px;
+}
+
+.settings .payment-history table {
+    width: 100%;
+    border-collapse: collapse;
+    text-align: left;
+}
+
+.settings .payment-history table thead {
+    width: 100%;
+    height: 40px;
+    background-color: #262626;
+}
+
+.settings .payment-history table thead tr {
+    height: 40px;
+}
+
+.settings .payment-history table thead th {
+    height: 40px;
+    font-size: 13px;
+    font-weight: bold;
+    color: #CDCDCD;
+    text-transform: uppercase;
+    padding-left: 20px;
+}
+
+.settings .payment-history table thead th:first-child {
+    border-top-left-radius: 5px;
+}
+
+.settings .payment-history table thead th:last-child {
+    border-top-right-radius: 5px;
+}
+
+.settings .payment-history table thead th img {
+    margin-left: 10px;
+}
+
+.settings .payment-history table tbody {
+    width: 100%;
+    background-color: #303030;
+}
+
+.settings .payment-history table tbody td {
+    height: 56px;
+    font-size: 14px;
+    font-weight: 400;
+    color: #FCFCFC;
+    padding-left: 20px;
+}
+
+.settings .payment-history table tbody tr:last-child td:last-child {
+    border-bottom-right-radius: 5px;
+}
+
+.settings .payment-history table tbody tr:last-child td:first-child {
+    border-bottom-left-radius: 5px;
+}
+
+@media screen and (max-width: 991px) {
+    .settings {
+        width: 100%;
+        padding: 0 24px;
+        margin-top: 40px;
+    }
+
+    .settings>div {
+        margin-bottom: 24px;
+    }
+
+    .settings .plan {
+        width: 100%;
+        display: block;
+        margin-bottom: 48px;
+    }
+    
+    .settings .plan>div {
+        height: auto;
+        background-color: #303030;
+        padding: 24px;
+        margin-bottom: 24px;
+    }
+    
+    .settings .plan .current-plan {
+        width: 100%;
+        margin-bottom: 24px;
+    }
+
+    .settings .current-plan .price {
+        display: block;
+        margin-bottom: 48px;
+    }
+
+    .settings .plan>div h3 {
+        margin-bottom: 32px;
+    }
+
+    .settings .current-plan .price div {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+    }
+
+    .settings .current-plan .total-wash {
+        display: block;
+        margin: 0;
+    }
+
+    .settings .current-plan .total-wash div:first-of-type {
+        width: 100%;
+        margin-bottom: 48px;
+    }
+
+    .settings .current-plan .total-wash div:last-of-type {
+        width: 100%;
+    }
+
+    .settings .current-plan .total-wash div #cancelSubscription {
+        width: 100%;
+    }
+    
+    .settings .plan .more-washes {
+        width: 100%;
+    }
+
+    .settings .plan .more-washes h3 {
+        margin-bottom: 56px;
+    }
+
+    .settings .more-washes button {
+        width: 100%;
+        float: none;
+        margin-top: 0;
+    }
+
+    .settings .auto-renew {
+        margin-bottom: 48px;
+    }
+
+    .settings .auto-renew .flex-row {
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        margin-bottom: 16px;
+    }
+
+    .settings .auto-renew .flex-row .title {
+        margin-right: 0;
+    }
+
+    .settings .payment-method {
+        width: 100%;
+        margin-bottom: 48px;
+    }
+
+    .settings .payment-method>div {
+        width: 100%;
+        margin-bottom: 10px;
+    }
+
+    .settings .payment-history {
+        width: 100%;
+    }
+
+    .settings .payment-history table thead tr th:nth-child(2),
+    .settings .payment-history table tbody tr td:nth-child(2) {
+        display: none;
+    }
+}

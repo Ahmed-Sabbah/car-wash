@@ -1,0 +1,203 @@
+.add-review {
+    display: block;
+    margin-top: 40px;
+    margin-bottom: 47px;
+    padding: 0 60px;
+}
+
+.add-review .step {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 72px;
+}
+
+.add-review .step .title h2 {
+    font-size: 30px;
+    font-weight: bold;
+    font-family: 'Bebas Neue', cursive;
+    text-transform: uppercase;
+    color: #FCFCFC;
+    margin-bottom: 11px;
+}
+
+.add-review .step .title h2 span {
+    font-size: 30px;
+    font-weight: bold;
+    font-family: 'Bebas Neue', cursive;
+    color: #45E01F;
+}
+
+.add-review .step .title p {
+    font-size: 16px;
+    font-weight: 400;
+    color: #CDCDCD;
+}
+
+.add-review .rate-box {
+    width: 536px;
+    height: 464px;
+    padding: 24px;
+    background-color: #303030;
+    border-radius: 4px;
+    -webkit-border-radius: 4px;
+    -moz-border-radius: 4px;
+    -ms-border-radius: 4px;
+    -o-border-radius: 4px;
+}
+
+.add-review .rate-box h3 {
+    font-size: 20px;
+    font-weight: bold;
+    color: #FCFCFC;
+}
+
+.add-review .rate-box h3 span {
+    font-size: 12px;
+    font-weight: 400;
+    color: #CDCDCD;
+    position: relative;
+    bottom: 3px;
+    margin-left: 6px;
+}
+
+.add-review .rate-box h3:first-of-type {
+    margin-bottom: 32px;
+}
+
+.add-review .rate-box .stars {
+    display: flex;
+    align-items: center;
+    margin-bottom: 56px;
+}
+
+.add-review .rate-box .stars .item {
+    margin-right: 8px;
+    cursor: pointer;
+}
+
+.add-review .rate-box .stars:hover>.item svg path {
+    fill: #45e01f;
+}
+
+.add-review .rate-box .stars:hover>.item:hover svg path {
+    fill: #45e01f;
+}
+
+.add-review .rate-box .stars>.item:hover~.item svg path {
+    fill: none;
+}
+
+/*/////////////////////////////////////////////////////////*/
+
+/* .add-review .rate-box .stars .item.selected svg path {
+    fill: #45e01f;
+    cursor: pointer;
+}
+
+.add-review .rate-box .stars .item.selected~.item svg path {
+    fill: none;
+    cursor: pointer;
+} */
+
+/* .add-review .rate-box .stars .item:hover svg path,
+.add-review .rate-box .stars .item.checked svg path {
+    fill: #45e01f;
+    cursor: pointer;
+}
+
+.add-review .rate-box .stars .item > path:hover ~ path {
+    fill: #45e01f;
+    cursor: pointer;
+} */
+
+.add-review .rate-box form .input-group label {
+    display: block;
+    font-size: 20px;
+    font-weight: bold;
+    color: #FCFCFC;
+    margin-bottom: 16px;
+}
+
+.add-review .rate-box form .input-group textarea {
+    width: 488px;
+    height: 160px;
+    background-color: #303030;
+    margin-bottom: 31px;
+    border: 1px solid #CDCDCD;
+    border-radius: 4px;
+    -webkit-border-radius: 4px;
+    -moz-border-radius: 4px;
+    -ms-border-radius: 4px;
+    -o-border-radius: 4px;
+}
+
+.add-review .rate-box form .input-group textarea::-webkit-resizer {
+    width: 0;
+    height: 0;
+    display: none
+}
+
+.add-review .rate-box form button {
+    width: 122px;
+    height: 41px;
+    background-color: #247310;
+    font-size: 14px;
+    font-weight: bold;
+    color: #FFFFFF;
+    float: right;
+    border: none;
+    border-radius: 4px;
+    -webkit-border-radius: 4px;
+    -moz-border-radius: 4px;
+    -ms-border-radius: 4px;
+    -o-border-radius: 4px;
+}
+
+@media screen and (max-width: 991px) {
+    .add-review {
+        display: block;
+        margin-top: 40px;
+        margin-bottom: 47px;
+        padding: 0 24px;
+    }
+
+    .add-review .step {
+        display: flex;
+        justify-content: space-between;
+        margin-bottom: 56px;
+    }
+
+    .add-review .step .title h2 {
+        font-size: 25px;
+        font-weight: 500;
+        margin-bottom: 10px;
+    }
+
+    .add-review .step .title h2 span {
+        font-size: 25px;
+        font-weight: 500;
+    }
+
+    .add-review .rate-box {
+        width: 100%;
+        height: auto;
+        padding: 16px;
+        padding-bottom: 24px;
+    }
+
+    .add-review .rate-box .stars {
+        justify-content: center;
+        margin-bottom: 50px;
+    }
+
+    .add-review .rate-box form .input-group textarea {
+        width: 100%;
+        height: 160px;
+        background-color: #303030;
+        margin-bottom: 31px;
+    }
+
+    .add-review .rate-box form button {
+        float: none;
+    }
+}

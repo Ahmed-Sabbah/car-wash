@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Car Wash</title>
+    <link rel="stylesheet" href="css/datepicker.css">
+    <link rel="stylesheet" href="css/payment-details.css">
+    <link rel="stylesheet" href="css/main.css">
+</head>
+
+<body>
+    <header>
+        <div class="left-navbar">
+            <img class="logo" src="images/landpage/Logo.svg" alt="logo">
+            <!-- <ul class="nav-links">
+                <li class="nav-item"><a href="#">How it works</a></li>
+                <li class="nav-item"><a href="#">Pricing</a></li>
+            </ul> -->
+        </div>
+        <div class="right-navbar">
+            <div class="auth-user">
+                <h4>Hello John</h4>
+                <div class="user-image">
+                    <!-- <img src="" alt=""> -->
+                </div>
+            </div>
+            <!-- <button class="login-link"><a href="#">Login</a></button>
+            <button class="get-started-link"><a href="#">Get Started</a></button> -->
+            <button class="choose-localization"><img src="images/icons/british flag.svg" alt="lang"></button>
+        </div>
+    </header>
+
+    <div class="mobile-menu">
+        <div class="head">
+            <div class="content">
+                <img class="logo" src="images/landpage/Logo.svg" alt="logo">
+                <button class="menu-toggle-btn" id="show-menu-btn" onclick="showMenu()">
+                    <img src="images/landpage/menu.svg" alt="menu">
+                </button>
+                <button class="menu-toggle-btn" id="close-menu-btn" onclick="closeMenu()">
+                    <img src="images/landpage/x.svg" alt="x">
+                </button>
+            </div>
+        </div>
+        <div class="menu">
+            <div class="content">
+                <div class="auth-user">
+                    <div class="user-image">
+                    </div>
+                    <button class="choose-localization"><img src="images/icons/british flag.svg" alt="lang"></button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="payment-details">
+        <div class="step">
+            <div class="title">
+                <h2><span>Step3:</span> choose a plan</h2>
+                <p>Choose from multiple plans with discount</p>
+            </div>
+        </div>
+        <div class="choosen-plan">
+            <div class="your-plan">
+                <div class="plan-info">
+                    <h3 class="period">1 month</h3>
+                    <div class="specifications">
+                        <h2>750 <sub>tl</sub></h2>
+                        <span class="price">$53.6</span>
+                        <p class="wash-times">15 Wash</p>
+                    </div>
+                </div>
+                <a href="#" class="back-to-plans">Choose another plan</a>
+            </div>
+            <div class="payment-card-details">
+                <h2>Payment Details</h2>
+                <form>
+                    <div class="form-group">
+                        <div class="input-group col-12">
+                            <label>Credit card number</label>
+                            <!-- <input type="text"> -->
+                            <div class="card-number-container">
+                                <div id="card-number"></div>
+                            </div>
+                        </div>
+                        <div class="input-group date">
+                            <label>Expiry Date</label>
+                            <div class="expiry-date">
+                                <input id="monthpicker" placeholder="Month">
+                                <input id="yearpicker" placeholder="Year">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <div class="input-group col-12">
+                            <label>Credit card holder name</label>
+                            <input type="text">
+                        </div>
+                        <div class="col-6">
+                            <div class="input-group ccv">
+                                <label>CCV</label>
+                                <!-- <input type="text"> -->
+                                <div class="card-cvv-container">
+                                    <div id="card-cvv"></div>
+                                </div>
+                            </div>
+                            <div class="save-credit-card">
+                                <label class="container">
+                                    Save Credit Card
+                                    <input type="checkbox">
+                                    <span class="checkmark"></span>
+                                </label>
+                            </div>
+                        </div>
+                    </div>
+
+                    <button>Confirm</button>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <script src="js/jquery-3.5.1.min.js"></script>
+    <script src="https://js.stripe.com/v3/"></script>
+    <script src="js/datepicker.min.js"></script>
+    <script>
+
+        let stripe = Stripe('pk_test_51JYnSXFb6MYHvly5a9zs4VGhOrPL4A6q0ncvg8w7zejnJi9ueAbq5GBeIJ1IirA0lTJAh5bAWdeddMPSx7SpqUHl003WPVQ4wf');
+
+        let elements = stripe.elements({ locale: "en" });
+
+        // let style = {
+        //     base: { height: '48px', border: '1px solid #CDCDCD', borderRadius: '4px' }
+        // };
+        const style = {
+            base: {
+                color: "#FFFFFF",
+                backgroundColor: "transparent",
+                fontSmoothing: "antialiased",
+                fontSize: "13px",
+                "::placeholder": {
+                    color: "#CDCDCD",
+                },
+                border: '1px solid #CDCDCD'
+            },
+            invalid: {
+                color: "#fa755a",
+                iconColor: "#fa755a",
+            },
+            complete: {
+                //
+            },
+            empty: {
+                //
+            },
+        };
+
+        let cardNumberElement = elements.create('cardNumber', { style });
+        cardNumberElement.mount('#card-number');
+        // var cardExpiryElement = elements.create('cardExpiry');
+        let cardCvcElement = elements.create('cardCvc', { style });
+        cardCvcElement.mount('#card-cvv');
+
+
+        $('#yearpicker').datepicker({
+            format: 'yyyy'
+        });
+        $('#monthpicker').datepicker({
+            format: 'mm'
+        });
+        function showMenu(e) {
+            $('.mobile-menu .head .menu-toggle-btn#show-menu-btn').toggle();
+            $('.mobile-menu .head .menu-toggle-btn#close-menu-btn').toggle();
+            $('.mobile-menu .menu').toggle();
+        }
+
+        function closeMenu(e) {
+            $('.mobile-menu .head .menu-toggle-btn#show-menu-btn').toggle();
+            $('.mobile-menu .head .menu-toggle-btn#close-menu-btn').toggle();
+            $('.mobile-menu .menu').toggle();
+        }
+    </script>
+</body>
+
+</html>

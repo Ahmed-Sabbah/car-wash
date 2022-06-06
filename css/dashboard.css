@@ -1,0 +1,289 @@
+.dashboard {
+    margin-top: 40px;
+    padding: 0 60px;
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 50px;
+}
+
+.dashboard .user-car {
+    width: 70%;
+}
+
+.dashboard .user-car .car-info {
+    width: 100%;
+    padding: 24px;
+    padding-bottom: 40px;
+    margin-bottom: 24px;
+    background-color: #303030;
+    border-radius: 4px;
+    -webkit-border-radius: 4px;
+    -moz-border-radius: 4px;
+    -ms-border-radius: 4px;
+    -o-border-radius: 4px;
+}
+
+.dashboard .user-car .car-info h2 {
+    font-size: 25px;
+    font-weight: bold;
+    color: #FCFCFC;
+    margin-bottom: 40px;
+}
+
+.dashboard .user-car .car-info .your-car {
+    width: 100%;
+    display: flex;
+    /* justify-content: space-between; */
+    align-items: center;
+}
+
+.dashboard .user-car .car-info .your-car img {
+    margin-right: 96px;
+}
+
+.dashboard .user-car .car-info .your-car .your-car-info {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    margin: 0 56px;
+}
+
+/* .dashboard .user-car .car-info .your-car .your-car-info div {
+    margin-right: 56px;
+}
+
+.dashboard .user-car .car-info .your-car .your-car-info div:last-of-type {
+    margin-right: 0;
+} */
+
+.dashboard .user-car .car-info .your-car .your-car-info div p {
+    font-size: 14px;
+    font-weight: 400;
+    color: #CDCDCD;
+    margin-bottom: 8px;
+}
+
+.dashboard .user-car .car-info .your-car .your-car-info div h3 {
+    font-size: 18px;
+    font-weight: bold;
+    color: #FCFCFC;
+}
+
+.dashboard .user-car .plan-statistics {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.dashboard .user-car .plan-statistics>div {
+    width: 49%;
+    height: 130px;
+    padding: 32px 56px 32px 24px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: #303030;
+    border-radius: 4px;
+    -webkit-border-radius: 4px;
+    -moz-border-radius: 4px;
+    -ms-border-radius: 4px;
+    -o-border-radius: 4px;
+}
+
+.dashboard .user-car .plan-statistics>div p {
+    font-size: 20px;
+    font-weight: 400;
+    color: #FCFCFC;
+}
+
+.dashboard .user-car .plan-statistics>div h2 {
+    font-size: 55px;
+    font-weight: bold;
+    color: #FCFCFC;
+}
+
+.dashboard .suggestion {
+    width: 27%;
+    min-height: 513px;
+    background-color: #303030;
+    padding: 24px;
+}
+
+.dashboard .suggestion h2 {
+    font-size: 25px;
+    font-weight: bold;
+    color: #FCFCFC;
+    margin-bottom: 16px;
+}
+
+.dashboard .suggestion p {
+    font-size: 16px;
+    font-weight: 400;
+    color: #CDCDCD;
+}
+
+.dashboard .suggestion form {
+    width: 100%;
+    margin-top: 48px;
+}
+
+.dashboard .suggestion form .input-group {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 48px;
+}
+
+.dashboard .suggestion form .input-group label {
+    font-size: 14px;
+    font-weight: 400;
+    color: #CDCDCD;
+    margin-bottom: 8px;
+}
+
+.dashboard .suggestion form .input-group textarea {
+    width: 100%;
+    height: 238px;
+    background-color: #303030;
+    font-size: 14px;
+    font-weight: 400;
+    color: #CDCDCD;
+    padding: 16px;
+    outline: none;
+    border: 1px solid #CDCDCD;
+    border-radius: 4px;
+    -webkit-border-radius: 4px;
+    -moz-border-radius: 4px;
+    -ms-border-radius: 4px;
+    -o-border-radius: 4px;
+}
+
+.dashboard .suggestion form .input-group textarea::-webkit-resizer {
+    resize: none;
+}
+
+.dashboard .suggestion form button {
+    width: 151px;
+    height: 41px;
+    background-color: #247310;
+    font-size: 14px;
+    font-weight: bold;
+    color: #FFFFFF;
+    float: right;
+    cursor: pointer;
+    border: none;
+    border-radius: 4px;
+    -webkit-border-radius: 4px;
+    -moz-border-radius: 4px;
+    -ms-border-radius: 4px;
+    -o-border-radius: 4px;
+}
+
+.dashboard .suggestion .successfully-send {
+    display: none;
+    text-align: center;
+    margin-top: 98px;
+}
+
+.dashboard .suggestion .successfully-send img {
+    margin-bottom: 16px;
+}
+
+.dashboard .suggestion .successfully-send p {
+    font-size: 14px;
+    font-weight: 400;
+    color: #CDCDCD;
+    line-height: 22px;
+}
+
+@media screen and (max-width: 991px) {
+    .dashboard {
+        width: 100%;
+        padding: 0 24px;
+        display: block;
+    }
+
+    .dashboard>div {
+        width: 100%;
+    }
+
+    .dashboard .user-car {
+        width: 100%;
+    }
+
+    .dashboard .user-car .car-info .your-car {
+        width: 100%;
+        display: block;
+    }
+
+    .dashboard .user-car .car-info .your-car img {
+        width: 100%;
+        margin-right: 0;
+        margin-bottom: 32px;
+    }
+
+    .dashboard .user-car .car-info .your-car .your-car-info {
+        display: grid;
+        grid-template-columns: auto auto;
+        grid-template-rows: auto auto;
+        column-gap: 50px;
+        row-gap: 24px;
+    }
+
+    .dashboard .user-car .car-info .your-car .your-car-info div {
+        margin-right: 0;
+    }
+
+    .dashboard .user-car .plan-statistics {
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .dashboard .user-car .plan-statistics>div {
+        width: 47%;
+        height: 137px;
+        padding: 24px 16px;
+        display: block;
+        margin-bottom: 24px;
+    }
+
+    .dashboard .user-car .plan-statistics>div p {
+        font-size: 12px;
+        margin-bottom: 32px;
+    }
+
+    .dashboard .user-car .plan-statistics>div h2 {
+        font-size: 35px;
+        text-align: right;
+    }
+
+    .dashboard .suggestion {
+        width: 100%;
+        min-height: 479px;
+        background-color: #303030;
+        padding: 16px;
+        margin-bottom: 65px;
+    }
+
+    .dashboard .suggestion h2 {
+        font-size: 20px;
+        margin-bottom: 8px;
+    }
+
+    .dashboard .suggestion p {
+        font-size: 14px;
+    }
+
+    .dashboard .suggestion form {
+        margin-top: 32px;
+    }
+
+    .dashboard .suggestion form .input-group {
+        margin-bottom: 32px;
+    }
+
+    .dashboard .suggestion form button {
+        width: 100%;
+        float: none;
+    }
+}
